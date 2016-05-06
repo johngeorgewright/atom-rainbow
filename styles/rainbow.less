@@ -4,36 +4,74 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-atom-text-editor.rainbow::shadow .rainbow {
-  &[data-rainbow-level="0"] {
+atom-overlay.rainbow .rainbow-item {
+  position: absolute;
+  top: -1.5em;
+  left: 0.1em;
+
+  &.rainbow-level-1 {
     color: @ui-site-color-1;
   }
 
-  &[data-rainbow-level="1"] {
+  &.rainbow-level-2 {
     color: @ui-site-color-2;
   }
 
-  &[data-rainbow-level="2"] {
+  &.rainbow-level-3 {
     color: @ui-site-color-3;
   }
 
-  &[data-rainbow-level="3"] {
+  &.rainbow-level-4 {
     color: @ui-site-color-4;
   }
 
-  &[data-rainbow-level="4"] {
+  &.rainbow-level-5 {
     color: @text-color-info;
   }
 
-  &[data-rainbow-level="5"] {
+  &.rainbow-level-6 {
     color: @text-color-success;
   }
 
-  &[data-rainbow-level="6"] {
+  &.rainbow-level-7 {
     color: @text-color-warning;
   }
 
-  &[data-rainbow-level="7"] {
+  &.rainbow-level-8 {
     color: @text-color-error;
   }
 }
+
+// atom-text-editor.rainbow::shadow .rainbow {
+//   &[data-rainbow-level="0"] {
+//     color: @ui-site-color-1;
+//   }
+//
+//   &[data-rainbow-level="1"] {
+//     color: @ui-site-color-2;
+//   }
+//
+//   &[data-rainbow-level="2"] {
+//     color: @ui-site-color-3;
+//   }
+//
+//   &[data-rainbow-level="3"] {
+//     color: @ui-site-color-4;
+//   }
+//
+//   &[data-rainbow-level="4"] {
+//     color: @text-color-info;
+//   }
+//
+//   &[data-rainbow-level="5"] {
+//     color: @text-color-success;
+//   }
+//
+//   &[data-rainbow-level="6"] {
+//     color: @text-color-warning;
+//   }
+//
+//   &[data-rainbow-level="7"] {
+//     color: @text-color-error;
+//   }
+// }

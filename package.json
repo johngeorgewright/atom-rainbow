@@ -9,7 +9,9 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash.debounce": "^4.0.6"
+  },
   "devDependencies": {
     "eslint": "^2.8.0"
   }
