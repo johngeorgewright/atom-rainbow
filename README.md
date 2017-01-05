@@ -9,3 +9,4 @@ This is not ready for use yet, hold your horses.
 Issues before release:
 
 - [ ] Overlays do not scroll past the screen successfully
+- [ ] Clicking on an overlay does nothing
