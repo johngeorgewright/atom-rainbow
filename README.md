@@ -4,7 +4,7 @@
 
 ![screenshot](https://raw.githubusercontent.com/johngeorgewright/atom-rainbow/master/preview.png)
 
-This is not ready for use yet, hold your horses.
+This is not ready for use yet, hold your horses. If you do still want to beta test this, run `apm install johngeorgewright/atom-rainbow`.
 
 Issues before release:
 
