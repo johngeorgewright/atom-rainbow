@@ -1,5 +1,7 @@
 # rainbow package
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/johngeorgewright/atom-rainbow.svg)](https://greenkeeper.io/)
+
 > Adding rainbow parentheses for the Atom Editor
 
 ![screenshot](https://raw.githubusercontent.com/johngeorgewright/atom-rainbow/master/preview.png)
