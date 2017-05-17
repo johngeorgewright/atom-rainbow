@@ -1,9 +1,9 @@
-'use babel';
+'use babel'
 
-import RainbowView from '../lib/rainbow-view';
+import '../lib/rainbow-view'
 
 describe('RainbowView', () => {
   it('has one valid test', () => {
-    expect('life').toBe('easy');
-  });
-});
+    expect('life').toBe('easy')
+  })
+})
