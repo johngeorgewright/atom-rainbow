@@ -4,9 +4,8 @@
 
 ![screenshot](https://raw.githubusercontent.com/johngeorgewright/atom-rainbow/master/preview.png)
 
-This is not ready for use yet, hold your horses. If you do still want to beta test this, run `apm install johngeorgewright/atom-rainbow`.
+This is taking me a long time to create. Until it's finished feel free to try it using `apm install johngeorgewright/atom-rainbow`.
 
-Issues before release:
+## Todo
 
-- [ ] Overlays do not scroll past the screen successfully
-- [ ] Clicking on an overlay does nothing
+- [ ] Configure bracket reg exp per language

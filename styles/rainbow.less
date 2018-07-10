@@ -4,74 +4,36 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-atom-overlay.rainbow .rainbow-item {
-  position: absolute;
-  top: -1.5em;
-  right: 0.01em;
-
-  &.rainbow-level-1 {
-    color: @ui-site-color-1;
+.highlight.rainbow {
+  &.rainbow-level-1 .region {
+    background-color: fadeout(@ui-site-color-1, 94%);
   }
 
-  &.rainbow-level-2 {
-    color: @ui-site-color-2;
+  &.rainbow-level-2 .region {
+    background-color: fadeout(@ui-site-color-2, 94%);
   }
 
-  &.rainbow-level-3 {
-    color: @ui-site-color-3;
+  &.rainbow-level-3 .region {
+    background-color: fadeout(@ui-site-color-3, 94%);
   }
 
-  &.rainbow-level-4 {
-    color: @ui-site-color-4;
+  &.rainbow-level-4 .region {
+    background-color: fadeout(@ui-site-color-4, 94%);
   }
 
-  &.rainbow-level-5 {
-    color: @text-color-info;
+  &.rainbow-level-5 .region {
+    background-color: fadeout(@text-color-info, 94%);
   }
 
-  &.rainbow-level-6 {
-    color: @text-color-success;
+  &.rainbow-level-6 .region {
+    background-color: fadeout(@text-color-success, 94%);
   }
 
-  &.rainbow-level-7 {
-    color: @text-color-warning;
+  &.rainbow-level-7 .region {
+    background-color: fadeout(@text-color-warning, 94%);
   }
 
-  &.rainbow-level-8 {
-    color: @text-color-error;
+  &.rainbow-level-8 .region {
+    background-color: fadeout(@text-color-error, 94%);
   }
 }
-
-// atom-text-editor.rainbow::shadow .rainbow {
-//   &[data-rainbow-level="0"] {
-//     color: @ui-site-color-1;
-//   }
-//
-//   &[data-rainbow-level="1"] {
-//     color: @ui-site-color-2;
-//   }
-//
-//   &[data-rainbow-level="2"] {
-//     color: @ui-site-color-3;
-//   }
-//
-//   &[data-rainbow-level="3"] {
-//     color: @ui-site-color-4;
-//   }
-//
-//   &[data-rainbow-level="4"] {
-//     color: @text-color-info;
-//   }
-//
-//   &[data-rainbow-level="5"] {
-//     color: @text-color-success;
-//   }
-//
-//   &[data-rainbow-level="6"] {
-//     color: @text-color-warning;
-//   }
-//
-//   &[data-rainbow-level="7"] {
-//     color: @text-color-error;
-//   }
-// }
