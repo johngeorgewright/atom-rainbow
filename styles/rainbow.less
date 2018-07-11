@@ -1,3 +1,31 @@
+/*
+[
+  [
+    [
+      [
+        [
+          [
+            [
+              [
+                [
+                  [
+                    [
+                      [
+
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]
+*/
+
 // The ui-variables file is provided by base themes provided by Atom.
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
@@ -5,35 +33,59 @@
 @import "ui-variables";
 
 .highlight.rainbow {
-  &.rainbow-level-1 .region {
-    background-color: fadeout(@ui-site-color-1, 94%);
+  .region.rainbow-level-1:first-child {
+    border-left: 0.5em solid fadeout(@ui-site-color-1, 80%);
+  }
+  .region.rainbow-level-1:last-child {
+    border-right: 0.5em solid fadeout(@ui-site-color-1, 80%);
   }
 
-  &.rainbow-level-2 .region {
-    background-color: fadeout(@ui-site-color-2, 94%);
+  .region.rainbow-level-2:first-child {
+    border-left: 0.5em solid fadeout(@ui-site-color-2, 80%);
+  }
+  .region.rainbow-level-2:last-child {
+    border-right: 0.5em solid fadeout(@ui-site-color-2, 80%);
   }
 
-  &.rainbow-level-3 .region {
-    background-color: fadeout(@ui-site-color-3, 94%);
+  .region.rainbow-level-3:first-child {
+    border-left: 0.5em solid fadeout(@ui-site-color-3, 80%);
+  }
+  .region.rainbow-level-3:last-child {
+    border-right: 0.5em solid fadeout(@ui-site-color-3, 80%);
   }
 
-  &.rainbow-level-4 .region {
-    background-color: fadeout(@ui-site-color-4, 94%);
+  .region.rainbow-level-4:first-child {
+    border-left: 0.5em solid fadeout(@ui-site-color-4, 80%);
+  }
+  .region.rainbow-level-4:last-child {
+    border-right: 0.5em solid fadeout(@ui-site-color-4, 80%);
   }
 
-  &.rainbow-level-5 .region {
-    background-color: fadeout(@text-color-info, 94%);
+  .region.rainbow-level-5:first-child {
+    border-left: 0.5em solid fadeout(@text-color-info, 80%);
+  }
+  .region.rainbow-level-5:last-child {
+    border-right: 0.5em solid fadeout(@text-color-info, 80%);
   }
 
-  &.rainbow-level-6 .region {
-    background-color: fadeout(@text-color-success, 94%);
+  .region.rainbow-level-6:first-child {
+    border-left: 0.5em solid fadeout(@text-color-success, 80%);
+  }
+  .region.rainbow-level-6:last-child {
+    border-right: 0.5em solid fadeout(@text-color-success, 80%);
   }
 
-  &.rainbow-level-7 .region {
-    background-color: fadeout(@text-color-warning, 94%);
+  .region.rainbow-level-7:first-child {
+    border-left: 0.5em solid fadeout(@text-color-warning, 80%);
+  }
+  .region.rainbow-level-7:last-child {
+    border-right: 0.5em solid fadeout(@text-color-warning, 80%);
   }
 
-  &.rainbow-level-8 .region {
-    background-color: fadeout(@text-color-error, 94%);
+  .region.rainbow-level-8:first-child {
+    border-left: 0.5em solid fadeout(@text-color-error, 80%);
+  }
+  .region.rainbow-level-8:last-child {
+    border-right: 0.5em solid fadeout(@text-color-error, 80%);
   }
 }
