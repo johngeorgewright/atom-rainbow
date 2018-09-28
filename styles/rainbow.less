@@ -32,60 +32,30 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.highlight.rainbow {
-  .region.rainbow-level-1:first-child {
-    border-left: 0.5em solid fadeout(@ui-site-color-1, 80%);
-  }
-  .region.rainbow-level-1:last-child {
-    border-right: 0.5em solid fadeout(@ui-site-color-1, 80%);
-  }
+@rainbow-transparency: 75%;
 
-  .region.rainbow-level-2:first-child {
-    border-left: 0.5em solid fadeout(@ui-site-color-2, 80%);
-  }
-  .region.rainbow-level-2:last-child {
-    border-right: 0.5em solid fadeout(@ui-site-color-2, 80%);
-  }
+#rainbow () {
+  .highlight (@level, @color) {
+    .region.rainbow-level-@{level}:first-child {
+      border-left: 0.5em solid fadeout(@color, @rainbow-transparency);
+      border-radius: 5px;
+    }
 
-  .region.rainbow-level-3:first-child {
-    border-left: 0.5em solid fadeout(@ui-site-color-3, 80%);
+    .region.rainbow-level-@{level}:last-child {
+      border-radius: 5px;
+      border-right: 0.5em solid fadeout(@color, @rainbow-transparency);
+    }
   }
-  .region.rainbow-level-3:last-child {
-    border-right: 0.5em solid fadeout(@ui-site-color-3, 80%);
-  }
+}
 
-  .region.rainbow-level-4:first-child {
-    border-left: 0.5em solid fadeout(@ui-site-color-4, 80%);
-  }
-  .region.rainbow-level-4:last-child {
-    border-right: 0.5em solid fadeout(@ui-site-color-4, 80%);
-  }
-
-  .region.rainbow-level-5:first-child {
-    border-left: 0.5em solid fadeout(@text-color-info, 80%);
-  }
-  .region.rainbow-level-5:last-child {
-    border-right: 0.5em solid fadeout(@text-color-info, 80%);
-  }
-
-  .region.rainbow-level-6:first-child {
-    border-left: 0.5em solid fadeout(@text-color-success, 80%);
-  }
-  .region.rainbow-level-6:last-child {
-    border-right: 0.5em solid fadeout(@text-color-success, 80%);
-  }
-
-  .region.rainbow-level-7:first-child {
-    border-left: 0.5em solid fadeout(@text-color-warning, 80%);
-  }
-  .region.rainbow-level-7:last-child {
-    border-right: 0.5em solid fadeout(@text-color-warning, 80%);
-  }
-
-  .region.rainbow-level-8:first-child {
-    border-left: 0.5em solid fadeout(@text-color-error, 80%);
-  }
-  .region.rainbow-level-8:last-child {
-    border-right: 0.5em solid fadeout(@text-color-error, 80%);
-  }
+.rainbow.highlight {
+  #rainbow.highlight(1, @ui-site-color-1);
+  #rainbow.highlight(2, @ui-site-color-2);
+  #rainbow.highlight(3, @ui-site-color-3);
+  #rainbow.highlight(4, @ui-site-color-4);
+  #rainbow.highlight(5, @text-color-info);
+  #rainbow.highlight(6, @text-color-info);
+  #rainbow.highlight(7, @text-color-success);
+  #rainbow.highlight(8, @text-color-warning);
+  #rainbow.highlight(9, @text-color-error);
 }
