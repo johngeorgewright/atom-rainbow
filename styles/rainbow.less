@@ -32,17 +32,17 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-@rainbow-transparency: 75%;
+@rainbow-transparency: 80%;
 
 #rainbow () {
   .highlight (@level, @color) {
     .region.rainbow-level-@{level}:first-child {
       border-left: 0.5em solid fadeout(@color, @rainbow-transparency);
-      border-radius: 5px;
+      border-radius: 0.5em;
     }
 
     .region.rainbow-level-@{level}:last-child {
-      border-radius: 5px;
+      border-radius: 0.5em;
       border-right: 0.5em solid fadeout(@color, @rainbow-transparency);
     }
   }
@@ -54,8 +54,7 @@
   #rainbow.highlight(3, @ui-site-color-3);
   #rainbow.highlight(4, @ui-site-color-4);
   #rainbow.highlight(5, @text-color-info);
-  #rainbow.highlight(6, @text-color-info);
-  #rainbow.highlight(7, @text-color-success);
-  #rainbow.highlight(8, @text-color-warning);
-  #rainbow.highlight(9, @text-color-error);
+  #rainbow.highlight(6, @text-color-success);
+  #rainbow.highlight(7, @text-color-warning);
+  #rainbow.highlight(8, @text-color-error);
 }
