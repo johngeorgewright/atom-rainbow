@@ -6,6 +6,3 @@
 
 This is taking me a long time to create. Until it's finished feel free to try it using `apm install johngeorgewright/atom-rainbow`.
 
-## Todo
-
-- [ ] Configure bracket reg exp per language
