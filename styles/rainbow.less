@@ -7,15 +7,6 @@
           [
             [
               [
-                [
-                  [
-                    [
-                      [
-
-                      ]
-                    ]
-                  ]
-                ]
               ]
             ]
           ]
@@ -32,10 +23,14 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-@rainbow-transparency: 80%;
+@rainbow-transparency: 70%;
 
 #rainbow () {
   .highlight (@level, @color) {
+    .region.rainbow-level-@{level}.rainbow-color-range {
+      background-color: fadeout(@color, 96%);
+    }
+
     .region.rainbow-level-@{level}:first-child {
       border-left: 0.5em solid fadeout(@color, @rainbow-transparency);
       border-radius: 0.5em;
